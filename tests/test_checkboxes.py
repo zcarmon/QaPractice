@@ -10,7 +10,7 @@ def test_single_unchecked(page :Page):
     box_locator = page.locator('[class="form-check-label"]')
     box_locator.uncheck()
     page.locator(FIELD_ID_SUBMIT).click()
-    expect(page.locator('[id="content"]')).not_to_have_id("result")
+    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
 def test_single_checked(page: Page):
     page.goto(BASE_URL + SINGLE)
@@ -21,20 +21,20 @@ def test_single_checked(page: Page):
 
 def test_multi_unchecked(page: Page):
     page.goto(BASE_URL + MULTI)
-    box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role("checkbox")
+    box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
     i = 0
     while i < box_locator.count(): #checkbox in box_locator:
         box_locator.nth(i).uncheck()
         i = i + 1
 
     page.locator(FIELD_ID_SUBMIT).click()
-    expect(page.locator('[id="content"]')).not_to_have_id("result")
+    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
 def test_multi_checked(page: Page):
     #access the url
     page.goto(BASE_URL + MULTI)
     #find the checkboxes
-    box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role("checkbox")
+    box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
     i = 0
     res_text = ""
     #loop over all the checkboxes
@@ -47,4 +47,4 @@ def test_multi_checked(page: Page):
     #click the button
     page.locator(FIELD_ID_SUBMIT).click()
     #check the expected result
-    expect(page.locator('[id="content"]')).not_to_have_id("result")
+    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
