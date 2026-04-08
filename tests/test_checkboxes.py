@@ -23,7 +23,8 @@ def test_multi_unchecked(page: Page):
     page.goto(BASE_URL + MULTI)
     box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
     i = 0
-    while i < box_locator.count(): #checkbox in box_locator:
+    #loop over the checkboxes and uncheck them
+    while i < box_locator.count():
         box_locator.nth(i).uncheck()
         i = i + 1
 

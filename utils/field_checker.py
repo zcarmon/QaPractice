@@ -1,5 +1,5 @@
-import pytest
 from playwright.sync_api import Page, expect
+
 
 def check_field_value_and_result(page :Page,
                                  the_field,
@@ -34,3 +34,21 @@ def check_result_by_click(page :Page,
         expect(page.locator(the_result_field_name)).to_have_text(the_result_message)
     else:
         print("\nATTENTION the field is disabled")
+
+def check_result_on_new_page_by_click(page :Page,
+                                      the_page_url,
+                                      context,
+                                      the_field,
+                                      the_result_field_name,
+                                      the_result_message):
+
+    page.goto(the_page_url)
+
+    with context.expect_page() as new_page_info:
+        page.locator(the_field).click()
+
+    new_page = new_page_info.value
+
+    expect(new_page.locator(the_result_field_name)).to_have_text(the_result_message)
+
+    pass

@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a6c5ef22-88a6-499c-8958-d4d0207c8761" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_checkboxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkboxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_links.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_links.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/consts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/field_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/field_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +65,8 @@
     "Python tests.Python tests for tests.test_checkboxes.test_single_unchecked.executor": "Run",
     "Python tests.Python tests for tests.test_input_fields.test_input_email.executor": "Run",
     "Python tests.Python tests for tests.test_input_fields.test_input_field_seq.executor": "Debug",
+    "Python tests.Python tests for tests.test_links.test_new_tab_button.executor": "Run",
+    "Python tests.Python tests for tests.test_links.test_new_tab_link.executor": "Run",
     "Python tests.Python tests for tests.test_multi_select.test_main_page.executor": "Run",
     "Python.field_checker.executor": "Run",
     "Python.test_multi_select.executor": "Run",
@@ -72,7 +77,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.documentation.PythonDocumentationConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -81,7 +86,7 @@
       <recent name="C:\Users\1\PycharmProjects\QaPractice\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_checkboxes.test_multi_checked">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_links.test_new_tab_button">
     <configuration name="Python tests for tests.test_checkboxes.test_multi_checked" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QaPractice" />
       <option name="ENV_FILES" value="" />
@@ -95,38 +100,6 @@
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.test_checkboxes.test_multi_checked&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_checkboxes.test_multi_unchecked" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QaPractice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_checkboxes.test_multi_unchecked&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_checkboxes.test_single" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QaPractice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_checkboxes.test_single&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -162,13 +135,45 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.test_links.test_new_tab_button" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QaPractice" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_links.test_new_tab_button&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_links.test_new_tab_link" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QaPractice" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_links.test_new_tab_link&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_multi_checked" />
-        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_multi_unchecked" />
-        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_single_checked" />
+        <item itemvalue="Python tests.Python tests for tests.test_links.test_new_tab_button" />
         <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_single_unchecked" />
-        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_single" />
+        <item itemvalue="Python tests.Python tests for tests.test_links.test_new_tab_link" />
+        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_single_checked" />
+        <item itemvalue="Python tests.Python tests for tests.test_checkboxes.test_multi_checked" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +201,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/field_checker.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
