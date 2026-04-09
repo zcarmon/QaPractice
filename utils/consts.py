@@ -14,3 +14,10 @@ FIELD_RESULT_EMPTY = ""
 PRESS_SEQ_DELAY = 200 #: Defines the sequential press delay
 
 ROLE_CHECKBOX = "checkbox"
+
+from enum import Enum
+class CONFIRMATION_TYPE(Enum):
+    CONF_ACCEPT = "accept"
+    CONF_CANCEL = "cancel"
+
+BASE_URL_ALERT_CONFIRM = "https://www.qa-practice.com/elements/alert/confirm"

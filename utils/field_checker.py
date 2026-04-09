@@ -41,6 +41,15 @@ def check_result_on_new_page_by_click(page :Page,
                                       the_field,
                                       the_result_field_name,
                                       the_result_message):
+    """
+    :param page: the page
+    :param the_page_url: the url to be loaded by goto
+    :param context: the context
+    :param the_field: the field to be located and clicked
+    :param the_result_field_name: the result field to be located
+    :param the_result_message: the result message
+    :return:
+    """
 
     page.goto(the_page_url)
 
