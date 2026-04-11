@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c5ef22-88a6-499c-8958-d4d0207c8761" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_alerts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/alerts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_links.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_links.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/alerts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/field_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/field_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +53,15 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for test_alerts.test_alert_box.test_confirmation_box.executor": "Run",
-    "Python tests.Python tests for tests.test_alerts.test_alert_box.executor": "Debug",
+    "Python tests.Python tests for test_alerts.test_prompt_accept.test_prompt_box.executor": "Run",
+    "Python tests.Python tests for tests.test_alerts.test_alert_box.executor": "Run",
     "Python tests.Python tests for tests.test_alerts.test_alert_box2.executor": "Debug",
     "Python tests.Python tests for tests.test_alerts.test_confirmation_box.executor": "Run",
+    "Python tests.Python tests for tests.test_alerts.test_confirmation_box_cancel.executor": "Run",
     "Python tests.Python tests for tests.test_alerts.test_confirmation_box_ok.executor": "Run",
+    "Python tests.Python tests for tests.test_alerts.test_prompt_accept.executor": "Run",
+    "Python tests.Python tests for tests.test_alerts.test_prompt_accept_without_text.executor": "Run",
+    "Python tests.Python tests for tests.test_alerts.test_prompt_cancel.executor": "Run",
     "Python tests.Python tests for tests.test_buttons.test_disabled.executor": "Debug",
     "Python tests.Python tests for tests.test_buttons.test_looks_like.executor": "Run",
     "Python tests.Python tests for tests.test_buttons.test_simple.executor": "Run",
@@ -81,7 +84,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -90,23 +93,7 @@
       <recent name="C:\Users\1\PycharmProjects\QaPractice\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_alerts.test_alert_box">
-    <configuration name="Python tests for test_alerts.test_alert_box.test_confirmation_box" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QaPractice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_alerts.test_alert_box.test_confirmation_box&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_alerts.test_prompt_cancel">
     <configuration name="Python tests for tests.test_alerts.test_alert_box" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="QaPractice" />
       <option name="ENV_FILES" value="" />
@@ -120,38 +107,6 @@
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.test_alerts.test_alert_box&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_alerts.test_alert_box2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QaPractice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_alerts.test_alert_box2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.test_alerts.test_confirmation_box" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="QaPractice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_alerts.test_confirmation_box&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -171,13 +126,61 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.test_alerts.test_prompt_accept" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QaPractice" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_alerts.test_prompt_accept&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_alerts.test_prompt_accept_without_text" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QaPractice" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_alerts.test_prompt_accept_without_text&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_alerts.test_prompt_cancel" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="QaPractice" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_alerts.test_prompt_cancel&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.test_alerts.test_prompt_cancel" />
+        <item itemvalue="Python tests.Python tests for tests.test_alerts.test_prompt_accept_without_text" />
+        <item itemvalue="Python tests.Python tests for tests.test_alerts.test_prompt_accept" />
         <item itemvalue="Python tests.Python tests for tests.test_alerts.test_alert_box" />
         <item itemvalue="Python tests.Python tests for tests.test_alerts.test_confirmation_box_ok" />
-        <item itemvalue="Python tests.Python tests for tests.test_alerts.test_alert_box2" />
-        <item itemvalue="Python tests.Python tests for tests.test_alerts.test_confirmation_box" />
-        <item itemvalue="Python tests.Python tests for test_alerts.test_alert_box.test_confirmation_box" />
       </list>
     </recent_temporary>
   </component>
@@ -210,11 +213,6 @@
           <url>file://$PROJECT_DIR$/utils/field_checker.py</url>
           <line>34</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/alerts.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
