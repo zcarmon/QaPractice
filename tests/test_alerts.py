@@ -36,6 +36,7 @@ def test_confirmation_box_cancel(page: Page):
         FIELD_ID_RESULT_TEXT,
         "Cancel")
 
+""" Prompt by adding some text """
 def test_prompt_accept(page: Page):
 
     prompt_checker(page,
@@ -48,6 +49,7 @@ def test_prompt_accept(page: Page):
                    "You entered",
                    FIELD_ID_RESULT)
 
+""" Prompt without adding text """
 def test_prompt_accept_without_text(page: Page):
 
     prompt_checker(page,
@@ -60,6 +62,7 @@ def test_prompt_accept_without_text(page: Page):
                    "You entered",
                    FIELD_ID_RESULT)
 
+""" Prompt by pressing the cancell button """
 def test_prompt_cancel(page: Page):
     prompt_checker(page,
                    BASE_URL_ALERT_PROMPT,

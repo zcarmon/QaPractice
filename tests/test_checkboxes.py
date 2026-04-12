@@ -1,26 +1,22 @@
 from utils.consts import *
 from utils.field_checker import *
 
-BASE_URL = "https://www.qa-practice.com/elements/checkbox/"
-SINGLE = "single_checkbox"
-MULTI = "mult_checkbox"
-
 def test_single_unchecked(page :Page):
-    page.goto(BASE_URL+SINGLE)
+    page.goto(BASE_URL_CHECKBOX + SINGLE_CHECKBOX)
     box_locator = page.locator('[class="form-check-label"]')
     box_locator.uncheck()
     page.locator(FIELD_ID_SUBMIT).click()
-    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
+    expect(page.locator(FIELD_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
 def test_single_checked(page: Page):
-    page.goto(BASE_URL + SINGLE)
+    page.goto(BASE_URL_CHECKBOX + SINGLE_CHECKBOX)
     box_locator = page.locator('[class="form-check-label"]')
     box_locator.check()
     page.locator(FIELD_ID_SUBMIT).click()
     expect(page.locator(FIELD_ID_RESULT_TEXT)).to_have_text("Select me or not", ignore_case=True)
 
 def test_multi_unchecked(page: Page):
-    page.goto(BASE_URL + MULTI)
+    page.goto(BASE_URL_CHECKBOX + MULTI_CHECKBOX)
     box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
     i = 0
     #loop over the checkboxes and uncheck them
@@ -29,11 +25,11 @@ def test_multi_unchecked(page: Page):
         i = i + 1
 
     page.locator(FIELD_ID_SUBMIT).click()
-    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
+    expect(page.locator(FIELD_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
 def test_multi_checked(page: Page):
     #access the url
-    page.goto(BASE_URL + MULTI)
+    page.goto(BASE_URL_CHECKBOX + MULTI_CHECKBOX)
     #find the checkboxes
     box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
     i = 0
@@ -48,4 +44,4 @@ def test_multi_checked(page: Page):
     #click the button
     page.locator(FIELD_ID_SUBMIT).click()
     #check the expected result
-    expect(page.locator(FIEL_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
+    expect(page.locator(FIELD_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
