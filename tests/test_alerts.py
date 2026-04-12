@@ -2,6 +2,7 @@ from utils.alerts import *
 from utils.consts import *
 from utils.field_checker import *
 
+""" Testing an alert popup """
 def test_alert_box(page: Page):
 
     confirmation_checker(page,
@@ -11,6 +12,7 @@ def test_alert_box(page: Page):
                          PAGE_WAIT_TIMEOUT_IN_MSEC,
                          "I am an alert!")
 
+""" Testing confirmation box """
 def test_confirmation_box_ok(page: Page):
 
     confirmation_checker(page,
@@ -22,6 +24,7 @@ def test_confirmation_box_ok(page: Page):
                          FIELD_ID_RESULT_TEXT,
                          "Ok")
 
+""" Testing confirmation box by pressing Cancel"""
 def test_confirmation_box_cancel(page: Page):
 
     confirmation_checker(page,
