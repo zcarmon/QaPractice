@@ -62,7 +62,7 @@ def test_prompt_accept_without_text(page: Page):
                    "You entered",
                    FIELD_ID_RESULT)
 
-""" Prompt by pressing the cancell button """
+""" Prompt by pressing the cancel button """
 def test_prompt_cancel(page: Page):
     prompt_checker(page,
                    BASE_URL_ALERT_PROMPT,

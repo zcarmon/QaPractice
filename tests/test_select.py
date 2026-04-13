@@ -1,18 +1,16 @@
 from playwright.sync_api import Page, expect
+from utils.consts import FIELD_ID_RESULT_TEXT, BASE_URL_MULT_SELECT
 
-from utils.consts import FIELD_ID_RESULT_TEXT
-
-BASE_URL = "https://www.qa-practice.com/elements/select/mult_select"
 
 #Check whenever we are in the correct page
 def test_main_page(page :Page):
-    page.goto(BASE_URL)
+    page.goto(BASE_URL_MULT_SELECT)
     expect(page.locator("h1")).to_have_text('Select inputs')
     pass
 
 #Check the dropdown list selection --> press the Submit button and check the result
 def test_dropdown_list(page :Page):
-    page.goto(BASE_URL)
+    page.goto(BASE_URL_MULT_SELECT)
     #Consts
     destination = "Mountains"
     transport = "Car"
@@ -27,7 +25,7 @@ def test_dropdown_list(page :Page):
     #Press the Submit button
     page.get_by_role("button",name = "Submit").click()
 
-    #Prepare the result phraze
+    #Prepare the result phrase
     res_txt = phrase_template.replace("<transport>",transport).replace("<destination>",destination).replace("<when>",when).lower()
 
     #Check if the result is as expected

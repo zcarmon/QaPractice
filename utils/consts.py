@@ -16,6 +16,7 @@ FIELD_CLASS_A_BUTTON = '[class="a-button"]'
 FIELD_ID_SELECT_STATE = '[id="id_select_state"]'
 FIELD_ENABLED = "Enabled"
 
+BASE_URL_MULT_SELECT = "https://www.qa-practice.com/elements/select/mult_select"
 BASE_URL_CHECKBOX = "https://www.qa-practice.com/elements/checkbox/"
 BASE_URL_INPUT_SIMPLE = "https://www.qa-practice.com/elements/input/simple"
 SINGLE_CHECKBOX = "single_checkbox"

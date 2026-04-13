@@ -1,6 +1,7 @@
 from utils.consts import *
 from utils.field_checker import *
 
+""" Test an unchecked checkbox """
 def test_single_unchecked(page :Page):
     page.goto(BASE_URL_CHECKBOX + SINGLE_CHECKBOX)
     box_locator = page.locator('[class="form-check-label"]')
@@ -8,6 +9,7 @@ def test_single_unchecked(page :Page):
     page.locator(FIELD_ID_SUBMIT).click()
     expect(page.locator(FIELD_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
+""" Test an checked checkbox """
 def test_single_checked(page: Page):
     page.goto(BASE_URL_CHECKBOX + SINGLE_CHECKBOX)
     box_locator = page.locator('[class="form-check-label"]')
@@ -15,6 +17,7 @@ def test_single_checked(page: Page):
     page.locator(FIELD_ID_SUBMIT).click()
     expect(page.locator(FIELD_ID_RESULT_TEXT)).to_have_text("Select me or not", ignore_case=True)
 
+""" Test multiple unchecked checkbox """
 def test_multi_unchecked(page: Page):
     page.goto(BASE_URL_CHECKBOX + MULTI_CHECKBOX)
     box_locator = page.locator('[class="form-check form-check-inline"]').get_by_role(ROLE_CHECKBOX)
@@ -27,6 +30,7 @@ def test_multi_unchecked(page: Page):
     page.locator(FIELD_ID_SUBMIT).click()
     expect(page.locator(FIELD_ID_CONTENT)).not_to_have_id(FIELD_RESULT)
 
+""" Test multiple checked checkbox """
 def test_multi_checked(page: Page):
     #access the url
     page.goto(BASE_URL_CHECKBOX + MULTI_CHECKBOX)

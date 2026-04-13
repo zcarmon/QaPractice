@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c5ef22-88a6-499c-8958-d4d0207c8761" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/drag_n_drop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_alerts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_buttons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_checkboxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkboxes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_drag_n_drop.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_drag_n_drop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inputs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/alerts.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/alerts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_links.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_links.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_select.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/consts.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/consts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/field_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/field_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

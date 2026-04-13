@@ -1,13 +1,13 @@
 from playwright.sync_api import Page
 
-def drag_n_drop(page: Page,
-                url,
-                source,
-                target,
-                wait_timeout_in_msec,
-                result_text,
-                drag_obj_locator = None,
-                drop_back = False):
+def drag_n_drop_checker(page: Page,
+                        url,
+                        source,
+                        target,
+                        wait_timeout_in_msec,
+                        result_text,
+                        drag_obj_locator = None,
+                        drop_back = False):
 
     page.goto(url)
 

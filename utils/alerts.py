@@ -32,8 +32,6 @@ def confirmation_checker(page: Page, url,
 
     # Verify the result text on the page after clicking OK
     if(result_locator is not None):
-        #if(result_text == "CheckMe"):
-        #    print("Kuku")
         result = page.locator(result_locator)
         assert result.is_visible(), "Result element not found"
         assert result.inner_text() == result_text, f"Unexpected result: {result.inner_text()}"
